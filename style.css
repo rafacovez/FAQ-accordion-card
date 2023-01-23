@@ -1,5 +1,5 @@
 :root {
-    --font-size: 0.8em;
+    --font-size: 1em;
     --font-regular: 400;
     --font-bold: 700;
     --font-family: 'Kumbh Sans', sans-serif;
@@ -77,6 +77,8 @@ img, picture, svg, video, object {
 }
 
 .modal__heading {
+    font-size: calc(var(--font-size) * 2);
+    color: var(--very-dark-saturated-blue);
     margin: 2rem 0;
     padding: 0;
     text-align: center;
@@ -98,9 +100,11 @@ img, picture, svg, video, object {
 }
 
 .modal__question-wrapper--question > p {
+    font-size: calc(var(--font-size) * 0.8);
     color: var(--very-dark-grayish-blue);
 }
 
 .modal__question-wrapper--answer > p {
+    font-size: calc(var(--font-size) * 0.8);
     color: var(--dark-grayish-blue);
 }
