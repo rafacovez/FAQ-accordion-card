@@ -70,10 +70,33 @@ img, picture, svg, video, object {
 }
 
 .modal {
+    position: relative;
     background-color: var(--white);
-    padding: 8rem 2rem 4rem 2rem;
-    margin: 1rem;
+    padding: 6rem 2rem 4rem 2rem;
+    margin: 8rem 1.5rem;
     border-radius: 16px;
+}
+
+.modal__illustration-wrapper--woman {
+    position: absolute;
+    top: -110px;
+    right: 0;
+    left: 0;
+    max-width: 240px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.modal__illustration-wrapper--pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.modal__illustration-wrapper--pattern > picture > img {
+    margin: 0 auto;
 }
 
 .modal__heading {
