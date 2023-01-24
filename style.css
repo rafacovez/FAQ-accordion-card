@@ -74,7 +74,7 @@ img, picture, svg, video, object {
     background-color: var(--white);
     padding: 6rem 2rem 4rem 2rem;
     margin: 8rem 1.5rem;
-    border-radius: 16px;
+    border-radius: 24px;
 }
 
 .modal__illustration-wrapper--woman {
