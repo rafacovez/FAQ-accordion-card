@@ -131,3 +131,15 @@ img, picture, svg, video, object {
     font-size: calc(var(--font-size) * 0.8);
     color: var(--dark-grayish-blue);
 }
+
+.attribution > p {
+    font-size: calc(var(--font-size) * 0.8);
+    color: var(--light-grayish-blue);
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.attribution > p > a {
+    color: var(--soft-red);
+}
