@@ -22,6 +22,8 @@ html {
 }
 
 body {
+    display: grid;
+    place-items: center;
     font-family: var(--font-family);
     font-size: var(--font-size);
     margin: 0;
@@ -87,6 +89,12 @@ img, picture, svg, video, object {
     z-index: 10;
 }
 
+/*
+.modal__illustration-wrapper--woman > .box-illustration-wrapper {
+    display: none;
+}
+*/
+
 .modal__illustration-wrapper--pattern {
     position: absolute;
     top: 0;
@@ -142,4 +150,43 @@ img, picture, svg, video, object {
 
 .attribution > p > a {
     color: var(--soft-red);
+}
+
+@media only screen and (min-width: 1440px) {
+    .modal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        padding: 4rem;
+        margin: 4rem auto 0 auto;
+        overflow: hidden;
+    }
+
+    .modal__illustration-wrapper--woman {
+        position: static;
+        min-width: 500px;
+        transform: translateX(calc(-4rem + -100px));
+    }
+
+    /*
+    .modal__illustration-wrapper--woman > .box-illustration-wrapper {
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        z-index: 15;
+    }
+    */
+
+    .modal__illustration-wrapper--pattern {
+        position: absolute;
+        left: -1250px;
+        top: 400px;
+    }
+
+    .modal__illustration-wrapper--pattern > picture > img {
+        min-width: 1000px;
+    }
 }

@@ -13,64 +13,77 @@
 <body>
   <main>
     <div class="modal">
-      <div class="modal__illustration-wrapper--woman">
-        <picture><img src="/images/illustration-woman-online-mobile.svg" alt="Woman searching on computer"></picture>
+      <div class="modal__illustration-wrapper">
+        <div class="modal__illustration-wrapper--woman">
+          <!--
+          <div class="box-illustration-wrapper">
+            <img src="/images/illustration-box-desktop.svg" alt="Soft red colored box">
+          </div>
+          -->
+          <picture>
+            <source srcset="/images/illustration-woman-online-desktop.svg" media="(min-width: 1440px)">
+            <img src="/images/illustration-woman-online-mobile.svg" alt="Woman searching on computer">
+          </picture>
+        </div>
+        <div class="modal__illustration-wrapper--pattern">
+          <source srcset="/images/bg-pattern-desktop.svg" media="(min-width: 1440px)">
+          <picture><img src="/images/bg-pattern-mobile.svg" alt="Platform shadow"></picture>
+        </div>
       </div>
-      <div class="modal__illustration-wrapper--pattern">
-        <picture><img src="/images/bg-pattern-mobile.svg" alt="Woman searching on computer"></picture>
+      <div class="modal__text-wrapper">
+        <h1 class="modal__heading">FAQ</h1>
+        <article class="modal__question-wrapper">
+          <section class="modal__question-wrapper--question">
+            <p>How many team members can I invite?</p>
+            <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
+          </section>
+          <section class="modal__question-wrapper--answer">
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.
+            </p>
+          </section>
+        </article>
+        <article class="modal__question-wrapper">
+          <section class="modal__question-wrapper--question">
+            <p>What is the maximum file upload size?</p>
+            <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
+          </section>
+          <section class="modal__question-wrapper--answer">
+            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </section>
+        </article>
+        <article class="modal__question-wrapper">
+          <section class="modal__question-wrapper--question">
+            <p>How do I reset my password?</p>
+            <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
+          </section>
+          <section class="modal__question-wrapper--answer">
+            <p>
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </section>
+        </article>
+        <article class="modal__question-wrapper">
+          <section class="modal__question-wrapper--question">
+            <p>Can I cancel my subscription?</p>
+            <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
+          </section>
+          <section class="modal__question-wrapper--answer">
+            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </section>
+        </article>
+        <article class="modal__question-wrapper">
+          <section class="modal__question-wrapper--question">
+            <p>Do you provide additional support?</p>
+            <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
+          </section>
+          <section class="modal__question-wrapper--answer">
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </section>
+        </article>
       </div>
-      <h1 class="modal__heading">FAQ</h1>
-      <article class="modal__question-wrapper">
-        <section class="modal__question-wrapper--question">
-          <p>How many team members can I invite?</p>
-          <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
-        </section>
-        <section class="modal__question-wrapper--answer">
-          <p>
-            You can invite up to 2 additional users on the Free plan. There is no limit on
-            team members for the Premium plan.
-          </p>
-        </section>
-      </article>
-      <article class="modal__question-wrapper">
-        <section class="modal__question-wrapper--question">
-          <p>What is the maximum file upload size?</p>
-          <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
-        </section>
-        <section class="modal__question-wrapper--answer">
-          <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-        </section>
-      </article>
-      <article class="modal__question-wrapper">
-        <section class="modal__question-wrapper--question">
-          <p>How do I reset my password?</p>
-          <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
-        </section>
-        <section class="modal__question-wrapper--answer">
-          <p>
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </p>
-        </section>
-      </article>
-      <article class="modal__question-wrapper">
-        <section class="modal__question-wrapper--question">
-          <p>Can I cancel my subscription?</p>
-          <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
-        </section>
-        <section class="modal__question-wrapper--answer">
-          <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-        </section>
-      </article>
-      <article class="modal__question-wrapper">
-        <section class="modal__question-wrapper--question">
-          <p>Do you provide additional support?</p>
-          <span class="icon-wrapper"><img src="/images//icon-arrow-down.svg" alt="Arrow down icon"></span>
-        </section>
-        <section class="modal__question-wrapper--answer">
-          <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-        </section>
-      </article>
     </div>
   </main>
 
