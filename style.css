@@ -89,12 +89,6 @@ img, picture, svg, video, object {
     z-index: 10;
 }
 
-/*
-.modal__illustration-wrapper--woman > .box-illustration-wrapper {
-    display: none;
-}
-*/
-
 .modal__illustration-wrapper--pattern {
     position: absolute;
     top: 0;
@@ -119,34 +113,55 @@ img, picture, svg, video, object {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
     margin: 0;
     border-bottom: 1px solid var(--light-grayish-blue);
     width: 250px;
+}
+
+.modal__question-wrapper.dropped-down {
+    padding: 1rem 0 1rem 0;
 }
 
 .modal__question-wrapper--question {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
-.modal__question-wrapper--question > p {
+.modal__question-wrapper--question-paragraph {
     font-size: calc(var(--font-size) * 0.8);
     color: var(--very-dark-grayish-blue);
 }
 
-.modal__question-wrapper--answer > p {
+.icon-wrapper {
+    transition: transform .2s ease-out;
+}
+
+.dropped-down > .modal__question-wrapper--question > .icon-wrapper {
+    transform: rotate(180deg);
+}
+
+.modal__question-wrapper--answer {
+    position: relative;
+}
+
+.modal__question-wrapper--answer-paragraph {
     font-size: calc(var(--font-size) * 0.8);
     color: var(--dark-grayish-blue);
     position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    inset: 0;
+    transform: translateY(-25px);
+    opacity: 0;
+    transition: all .2s ease-out;
+    z-index: -25;
+}
+
+.dropped-down > .modal__question-wrapper--answer > .modal__question-wrapper--answer-paragraph {
+    position: static;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .attribution > p {
@@ -183,23 +198,13 @@ img, picture, svg, video, object {
         transform: translateX(calc(-4rem + -100px));
     }
 
-    /*
-    .modal__illustration-wrapper--woman > .box-illustration-wrapper {
-        display: block;
-        position: absolute;
-        bottom: 50px;
-        left: 0;
-        z-index: 15;
-    }
-    */
-
     .modal__illustration-wrapper--pattern {
         position: absolute;
-        left: -1250px;
-        top: 400px;
+        left: -1000px;
+        top: 300px;
     }
 
     .modal__illustration-wrapper--pattern > picture > img {
-        min-width: 1000px;
+        min-width: 800px;
     }
 }
