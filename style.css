@@ -75,7 +75,7 @@ img, picture, svg, video, object {
     position: relative;
     background-color: var(--white);
     padding: 6rem 2rem 4rem 2rem;
-    margin: 8rem 1.5rem;
+    margin: 8rem 1.5rem 4rem 1.5rem;
     border-radius: 24px;
 }
 
@@ -122,6 +122,7 @@ img, picture, svg, video, object {
     padding: 1rem 0;
     margin: 0;
     border-bottom: 1px solid var(--light-grayish-blue);
+    width: 250px;
 }
 
 .modal__question-wrapper--question {
@@ -138,6 +139,14 @@ img, picture, svg, video, object {
 .modal__question-wrapper--answer > p {
     font-size: calc(var(--font-size) * 0.8);
     color: var(--dark-grayish-blue);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .attribution > p {
@@ -162,6 +171,10 @@ img, picture, svg, video, object {
         padding: 4rem;
         margin: 4rem auto 0 auto;
         overflow: hidden;
+    }
+
+    .modal__question-wrapper {
+        width: 350px;
     }
 
     .modal__illustration-wrapper--woman {
